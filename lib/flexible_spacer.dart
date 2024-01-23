@@ -43,7 +43,7 @@ class RenderFlexibleSpacer extends RenderBox {
 
   @override
   void performLayout() {
-    final AbstractNode? flex = parent;
+    final RenderObject? flex = parent;
     if (flex == null || flex is! RenderFlex) {
       throw FlutterError(
         'FlexibleSpacer widget must be placed directly inside a Flex widget',
